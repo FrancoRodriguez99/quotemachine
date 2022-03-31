@@ -34,7 +34,7 @@ class NewQuote extends React.Component {
             </div>
             <div id="options">
                 <button id="new-quote" class="btn btn-primary" onClick={this.changeQuote}>New Quote <i class="fa fa-quote-left"> </i></button>
-                <button id="tweet-quote" class="btn btn-primary">Twittear <i class="fa fa-twitter" aria-hidden="true"></i></button>
+                <a className="twitter-share-button" id="tweet-quote" href={`https://twitter.com/intent/tweet?text=${this.state.quote}--${this.state.author}`}>Tweet this one! <i class="fa fa-twitter" aria-hidden="true"></i></a>
             </div>
         </div>)
     }
